@@ -38,3 +38,26 @@ create_dictionary():
 main()
 """
 
+def main() 
+    sentence = "enjoy the excellent band tonight"
+    dictionary = create_dictionary()
+
+def create_dictionary(txt_file) :
+    infile = open(txt_file, "r")
+    words = [word.rstrip() for word in infile]   
+    infile.close()
+    return dict ([word.split(",")for word in words])
+
+    for word in words: 
+        [k,v] = word. split(",") 
+        translation[k] = v
+    
+    return translation
+
+def translate(sentence, dictionaru)
+    print("From translate", sentence)
+    words = sentence.split()
+    for word in words:
+        print(dictionary.get(word,word)," , end="")
+
+main()
